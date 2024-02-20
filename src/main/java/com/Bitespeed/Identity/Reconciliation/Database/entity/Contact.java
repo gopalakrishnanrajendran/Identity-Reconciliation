@@ -1,4 +1,4 @@
-package com.Bitespeed.Identity.Reconciliation.Database.model;
+package com.Bitespeed.Identity.Reconciliation.Database.entity;
 
 
 import javax.persistence.*;

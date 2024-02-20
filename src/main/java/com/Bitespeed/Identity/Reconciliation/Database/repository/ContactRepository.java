@@ -1,6 +1,6 @@
 package com.Bitespeed.Identity.Reconciliation.Database.repository;
 
-import com.Bitespeed.Identity.Reconciliation.Database.model.Contact;
+import com.Bitespeed.Identity.Reconciliation.Database.entity.Contact;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
