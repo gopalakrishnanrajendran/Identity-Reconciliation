@@ -1,10 +1,15 @@
 package com.Bitespeed.Identity.Reconciliation.Database.entity;
 
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name="contact", schema = "identityreconciliation")
+@Getter
+@Setter
 public class Contact {
 
     @Id
