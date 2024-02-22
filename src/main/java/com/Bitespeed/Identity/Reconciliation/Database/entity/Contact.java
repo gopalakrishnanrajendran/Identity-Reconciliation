@@ -1,15 +1,17 @@
 package com.Bitespeed.Identity.Reconciliation.Database.entity;
 
 
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
-import javax.persistence.*;
 
 @Entity
 @Table(name="contact", schema = "identityreconciliation")
 @Getter
 @Setter
+@ToString
 public class Contact {
 
     @Id
@@ -36,7 +38,7 @@ public class Contact {
     @Column(name = "updated_at")
     private long updatedAt ;
 
-    @Column(name = "created_at")
+    @Column(name = "deleted_at")
     private long deletedAt;
 
 
