@@ -28,7 +28,7 @@ public class ContactService {
 
         List<com.Bitespeed.Identity.Reconciliation.Database.entity.Contact> contactList = contactRepository.findByEmail(email);
 
-        System.out.println(email+" printing contact list from email "+contactList);
+       // System.out.println(email+" printing contact list from email "+contactList);
         if(contactList.isEmpty()){
             return null;
         }
@@ -42,7 +42,7 @@ public class ContactService {
 
         List<com.Bitespeed.Identity.Reconciliation.Database.entity.Contact> contactList = contactRepository.findByPhoneNumber(phoneNumber);
 
-        System.out.println(phoneNumber+" printing contact list from phoneNumber "+contactList);
+       // System.out.println(phoneNumber+" printing contact list from phoneNumber "+contactList);
         if(contactList.isEmpty()){
             return null;
         }
@@ -84,10 +84,12 @@ public class ContactService {
         List<String> emails = new ArrayList<>();
         Set<String> emailSet = new HashSet<>();
         emails.add(parent.getEmail());
+        emailSet.add(parent.getEmail());
 
         Set<String> phoneSet = new HashSet<>();
         List<String>phoneNumbers = new ArrayList<>();
         phoneNumbers.add(parent.getPhoneNumber());
+        phoneSet.add(parent.getPhoneNumber());
 
         List<Integer> secondaryIds = new ArrayList<>();
 

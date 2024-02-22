@@ -8,7 +8,7 @@ import lombok.ToString;
 
 
 @Entity
-@Table(name="contact", schema = "identityreconciliation")
+@Table(name="contact")
 @Getter
 @Setter
 @ToString
